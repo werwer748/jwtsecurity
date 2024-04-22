@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import study.jwtsecurity.common.MemberType;
 import study.jwtsecurity.dto.member.response.MemberInfoResponse;
-import study.jwtsecurity.dto.signup.SignUpRequest;
 import study.jwtsecurity.repository.MemberRepository;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package study.jwtsecurity.dto.signup;
+package study.jwtsecurity.dto.signup.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
