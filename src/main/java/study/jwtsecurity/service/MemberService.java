@@ -36,7 +36,7 @@ public class MemberService {
     @Transactional
     public MemberUpdateResponse updateMember(UUID id, MemberUpdateRequest request) {
         return memberRepository.findById(id)
-                .filter(member -> member.getPassword().equals(request.password()))
+                .filter(member -> encoder.matches(request.password(), member.getPassword()))
                 .map(member -> {
                     member.update(request, encoder);
                     return MemberUpdateResponse.of(true, member);
